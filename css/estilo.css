@@ -177,3 +177,8 @@ ul li a:hover{
     color: red;
     text-shadow: 0 0 5px red;
 }
+
+#seta a{
+    color:rgba(216, 34, 34, 0.5);
+    
+}
