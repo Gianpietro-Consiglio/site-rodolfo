@@ -1,0 +1,179 @@
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    width: 100%;
+    height: 950px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner video{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 950px;
+}
+
+#banner .conteudo{
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#nome{
+    color: rgba(216, 34, 34, 0.5);
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: 8px;
+    font-family: 'Kalam', cursive;
+}
+
+#personal{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Kalam', cursive;
+}   
+
+#seta{
+    margin-top: 200px; 
+}
+/*****************************/
+
+
+.foto{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.botao{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    background-color: rgba(216, 34, 34, 0.5);
+    text-transform: uppercase; 
+    border-radius: 20px;   
+}
+
+.botao:hover{
+    background-color: rgba(216, 34, 34, 0.8);
+    transition: background-color 1s;
+}
+
+#botao-pai{
+    margin-top: 10px;
+}
+
+
+#textos {
+    margin-left: 500px;
+    margin-right: 50px;
+    margin-top: -420px; 
+    text-indent: 10px; 
+    color: whitesmoke;
+    text-justify: distribute;
+}
+
+#galeria img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 0.5;  
+}
+
+#galeria img:hover{
+    padding: 10px;
+    transition: padding 2s;
+    transition: opacity 1s; 
+    opacity: 1;
+}
+
+#galeria{
+    margin-top: 100px;
+    padding: 20px;
+
+}
+
+footer{
+    background-color: black;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#background-total{
+    /*background-image: url(../img/pexels-victor-freitas-841130.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    height: 100%;*/
+    
+    background-image: linear-gradient(#333, #222);
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+
+ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+ul li a{
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: #333;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: .5s;
+    color: #666;
+}
+
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 50%;
+    transform: scale(.9);
+    transition: .5s;
+    z-index: -1;
+}
+ul li a:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
+}
+
+ul li a:hover{
+    color: red;
+    text-shadow: 0 0 5px red;
+}
